@@ -120,6 +120,8 @@ export default function InstallationsguiderPage() {
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-700"
                 />
+              </div>
+            </div>
           </div>
         </div>
       </section>
