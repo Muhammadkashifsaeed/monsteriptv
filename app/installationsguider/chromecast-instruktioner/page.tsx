@@ -402,3 +402,5 @@ export default function InstallationsguideChromecastPage() {
     </div>
   );
 }
+
+import type { Metadata } from "next";

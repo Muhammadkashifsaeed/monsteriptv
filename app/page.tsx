@@ -13,37 +13,6 @@ import FAQSection from "@/components/FAQSection";
 import FeaturesSection from "@/components/FeaturesSection";
 import HeroTypingText from "@/components/HeroTypingText";
 
-export const metadata: Metadata = {
-  title: "Monster TV | Bästa IPTV med 13,000+ kanaler, filmer & live-sport",
-  description: "Streaming med Monster TV. 13,000+ TV-kanaler, 26,000+ filmer och serier, live-sport och PPV-evenemang. Konkurrenskraftiga paket och gratis test. Säker, stabil och snabbaktiverad IPTV. Välj mellan 3 månaders (499 kr), 6 månaders (899 kr) eller 12 månaders (1,499 kr) paket.",
-  keywords: ["IPTV", "streaming", "Monster TV", "live-sport", "filmer", "serier", "kanaler", "paket", "gratis test", "3 månader", "6 månader", "12 månader", "abonnemang"],
-  alternates: {
-    canonical: "https://monstertv.tv/",
-  },
-  openGraph: {
-    title: "Monster TV | Bästa IPTV med 13,000+ kanaler, filmer & live-sport",
-    description: "Streaming med Monster TV. 13,000+ TV-kanaler, 26,000+ filmer och serier, live-sport och PPV-evenemang.",
-    type: "website",
-    locale: "sv_SE",
-    url: "https://monstertv.tv/",
-    siteName: "Monster TV",
-    images: [
-      {
-        url: "https://monstertv.tv/images/allsvenskan-2026.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Monster TV - Bästa IPTV med 13,000+ kanaler",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Monster TV | Bästa IPTV med 13,000+ kanaler, filmer & live-sport",
-    description: "13,000+ TV-kanaler, 26,000+ filmer och serier, live-sport och PPV-evenemang.",
-    images: ["https://monstertv.tv/images/allsvenskan-2026.jpg"],
-  },
-};
-
 export default function Home() {
   return (
     <main>

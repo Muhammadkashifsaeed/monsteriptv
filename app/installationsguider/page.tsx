@@ -131,3 +131,5 @@ export default function InstallationsguiderPage() {
     </div>
   );
 }
+
+import type { Metadata } from "next";

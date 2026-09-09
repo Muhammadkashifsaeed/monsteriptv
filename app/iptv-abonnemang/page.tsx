@@ -6,6 +6,7 @@ import BenefitsSection from '@/components/BenefitsSection';
 import IptvPricingSection from '@/components/IptvPricingSection';
 import ComparisonTable from '@/components/ComparisonTable';
 import CtaSection from '@/components/CtaSection';
+import type { Metadata } from "next";
 
 
 export const metadata: Metadata = {
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://monstertv.tv/iptv-abonnemang/" },
   openGraph: {
     title: "IPTV Abonnemang 2026 | Monster TV",
-    description: "Installera Iptv Abonnemang pa .",
+    description: "Bestall IPTV-abonnemang fran Monster TV.",
     type: "website",
     locale: "sv_SE",
     url: "https://monstertv.tv/iptv-abonnemang/",
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "IPTV Abonnemang 2026 | Monster TV",
-    description: "Installera Iptv Abonnemang pa .",
+    description: "Bestall IPTV-abonnemang fran Monster TV.",
     images: ["https://monstertv.tv/images/allsvenskan-2026.jpg"]
   }
 };

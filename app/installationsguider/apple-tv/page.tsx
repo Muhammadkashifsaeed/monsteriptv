@@ -436,3 +436,5 @@ export default function InstallationsguideAppleTvPage() {
     </div>
   );
 }
+
+import type { Metadata } from "next";
