@@ -49,6 +49,10 @@ export default function Header() {
     };
   }, [mobileMenuOpen]);
 
+  useEffect(() => {
+    setOpenDropdown(null);
+  }, [pathname]);
+
   const closeMobileMenu = () => {
     setMobileMenuOpen(false);
     setOpenDropdown(null);
@@ -240,8 +244,8 @@ export default function Header() {
               }
             }}
           >
-            <button
-              type="button"
+            <Link
+              href="/installationsguider"
               id="dropdown-installationsguider-trigger"
               aria-haspopup="true"
               aria-expanded={openDropdown === "installationsguider"}
@@ -257,7 +261,7 @@ export default function Header() {
                 }`}
                 aria-hidden="true"
               />
-            </button>
+            </Link>
 
             <div
               id="dropdown-installationsguider"
@@ -433,8 +437,8 @@ export default function Header() {
 
           {/* Installationsguider Mobile Dropdown */}
           <div className="space-y-1">
-            <button
-              type="button"
+            <Link
+              href="/installationsguider"
               className={`w-full text-left flex items-center justify-between py-3 px-3 font-medium rounded transition-colors ${
                 isInstallationsguiderActive
                   ? "text-[#e50000]"
@@ -451,7 +455,7 @@ export default function Header() {
                 }`}
                 aria-hidden="true"
               />
-            </button>
+            </Link>
 
             <div
               id="mobile-dropdown-installationsguider"

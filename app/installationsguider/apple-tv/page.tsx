@@ -3,6 +3,35 @@ import Image from 'next/image';
 import Link from 'next/link';
 import AppSidebar from '@/components/AppSidebar';
 
+export const metadata = {
+  title: 'IPTV på Apple TV 2026 | Monster TV - Installationsguide',
+  description: 'De bästa apparna och inställningarna för att använda IPTV på din Apple TV. Steg-för-steg guide för IPTVX, iPlayTV, Tivimate och andra appar.',
+  keywords: ['Apple TV', 'IPTV', 'guide', 'installera', 'Monster TV', 'appar', 'IPTVX', 'iPlayTV', 'Tivimate'],
+  alternates: { canonical: 'https://monstertv.tv/installationsguider/apple-tv/' },
+  openGraph: {
+    title: 'IPTV på Apple TV 2026 | Monster TV - Installationsguide',
+    description: 'De bästa apparna för IPTV på Apple TV.',
+    type: 'website',
+    locale: 'sv_SE',
+    url: 'https://monstertv.tv/installationsguider/apple-tv/',
+    siteName: 'Monster TV',
+    images: [
+      {
+        url: 'https://monstertv.tv/images/allsvenskan-2026.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Monster TV - IPTV på Apple TV',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'IPTV på Apple TV 2026 | Monster TV - Installationsguide',
+    description: 'De bästa apparna för IPTV på Apple TV.',
+    images: ['https://monstertv.tv/images/allsvenskan-2026.jpg'],
+  },
+};
+
 const sidebarApps = [
   { name: 'IPTVX', url: '/installationsguider/apple-tv/iptvx' },
   { name: 'iPlayTV', url: '/installationsguider/apple-tv/iplaytv' },

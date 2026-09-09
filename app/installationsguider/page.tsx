@@ -4,6 +4,35 @@ import Link from 'next/link';
 import DeviceGuideGrid from '@/components/DeviceGuideGrid';
 import InstallationStepsFAQ from '@/components/InstallationStepsFAQ';
 
+export const metadata = {
+  title: 'Installationsguider | Monster TV - Steg-för-steg IPTV guider',
+  description: 'Komplett installationsguider för IPTV på alla enheter. Smart TV, Android TV, iOS, Android, Windows, Mac, Apple TV, Nvidia Shield och mer. Steg-för-steg instruktioner.',
+  keywords: ['installationsguider', 'IPTV', 'guide', 'Smart TV', 'Android TV', 'Apple TV', 'Windows', 'Mac', 'Monster TV'],
+  alternates: { canonical: 'https://monstertv.tv/installationsguider/' },
+  openGraph: {
+    title: 'Installationsguider | Monster TV - Steg-för-steg IPTV guider',
+    description: 'Komplett installationsguider för IPTV på alla enheter.',
+    type: 'website',
+    locale: 'sv_SE',
+    url: 'https://monstertv.tv/installationsguider/',
+    siteName: 'Monster TV',
+    images: [
+      {
+        url: 'https://monstertv.tv/images/allsvenskan-2026.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Monster TV - Installationsguider',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Installationsguider | Monster TV - Steg-för-steg IPTV guider',
+    description: 'Komplett installationsguider för IPTV på alla enheter.',
+    images: ['https://monstertv.tv/images/allsvenskan-2026.jpg'],
+  },
+};
+
 export default function InstallationsguiderPage() {
   return (
     <div className="w-full font-sans bg-[#0a0a0a] min-h-screen">

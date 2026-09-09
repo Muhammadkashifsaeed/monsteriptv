@@ -234,8 +234,6 @@ export default function DeviceGuideGrid() {
                       key={idx} 
                       href={tag.url}
                       className="px-2.5 py-1 text-xs font-medium bg-gray-800 hover:bg-gray-700 text-gray-300 hover:text-white transition-colors rounded-md border border-gray-700 hover:border-gray-500"
-                      target="_blank"
-                      rel="noopener noreferrer"
                     >
                       {tag.name}
                     </Link>

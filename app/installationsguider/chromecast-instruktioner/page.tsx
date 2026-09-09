@@ -2,6 +2,35 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
+export const metadata = {
+  title: 'Chromecast IPTV Instruktioner | Monster TV',
+  description: 'Så castar du IPTV från din telefon eller surfplatta direkt till din Chromecast. Steg-för-steg guide för Chromecast IPTV.',
+  keywords: ['Chromecast', 'IPTV', 'guide', 'cast', 'streaming', 'Monster TV', 'installera'],
+  alternates: { canonical: 'https://monstertv.tv/installationsguider/chromecast-instruktioner/' },
+  openGraph: {
+    title: 'Chromecast IPTV Instruktioner | Monster TV',
+    description: 'Streama IPTV med Chromecast på din TV.',
+    type: 'website',
+    locale: 'sv_SE',
+    url: 'https://monstertv.tv/installationsguider/chromecast-instruktioner/',
+    siteName: 'Monster TV',
+    images: [
+      {
+        url: 'https://monstertv.tv/images/allsvenskan-2026.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Monster TV - Chromecast IPTV',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Chromecast IPTV Instruktioner | Monster TV',
+    description: 'Streama IPTV med Chromecast på din TV.',
+    images: ['https://monstertv.tv/images/allsvenskan-2026.jpg'],
+  },
+};
+
 const appLinks = [
   { name: 'IPTV Smarters', url: '/installationsguider/apple-tv/iptv-smarters' },
   { name: 'Tivimate', url: '/installationsguider/apple-tv/tivimate' },
