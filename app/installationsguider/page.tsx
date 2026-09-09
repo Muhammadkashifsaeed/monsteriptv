@@ -120,21 +120,6 @@ export default function InstallationsguiderPage() {
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-700"
                 />
-              </div>
-            </div>
-          </div>
-
-          {/* Underneath the section CTA */}
-          <div className="mt-16 flex justify-center lg:justify-start">
-            <Link 
-              href="/installationsguider" 
-              className="inline-flex items-center justify-center gap-3 bg-purple-600 hover:bg-purple-700 text-white font-bold py-4 px-10 rounded-full text-lg transition-all duration-300 shadow-lg shadow-purple-600/20 hover:-translate-y-1 hover:shadow-purple-600/40"
-            >
-              Installationsguider
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" viewBox="0 0 20 20" fill="currentColor">
-                <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
-              </svg>
-            </Link>
           </div>
         </div>
       </section>
