@@ -1,0 +1,117 @@
+import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import DeviceGuideGrid from '@/components/DeviceGuideGrid';
+import InstallationStepsFAQ from '@/components/InstallationStepsFAQ';
+
+export default function InstallationsguiderPage() {
+  return (
+    <div className="w-full font-sans bg-[#0a0a0a] min-h-screen">
+      <section className="relative w-full h-[300px] md:h-[350px] flex items-center justify-center bg-[#0a0a0a]">
+        {/* Background Image */}
+        <div className="absolute inset-0 w-full h-full z-0">
+          <Image 
+            src="/images/backeed.webp" 
+            alt="Installationsguider" 
+            fill 
+            className="object-cover object-[center_60%] brightness-50"
+            quality={100}
+            priority
+          />
+          {/* Dark overlay */}
+          <div className="absolute inset-0 bg-black/60"></div>
+        </div>
+
+        {/* Content Container positioned in the center */}
+        <div className="container mx-auto px-4 relative z-10 flex flex-col items-center justify-center text-center">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-4 tracking-tight">
+            Installationsguider
+          </h1>
+          
+          <div 
+            className="flex items-center gap-2"
+            style={{
+              fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif",
+              fontWeight: 400,
+              color: "rgb(255, 255, 255)",
+              fontSize: "15px",
+              lineHeight: "24px"
+            }}
+          >
+            <Link href="/" className="hover:text-[#e50000] transition-colors">Hem</Link>
+            <span>/</span>
+            <span className="text-gray-300">Installationsguider</span>
+          </div>
+        </div>
+      </section>
+
+      {/* Installation Section */}
+      <section className="py-24 px-4 bg-[#0a0a0a] border-t border-gray-900">
+        <div className="container mx-auto max-w-7xl">
+          <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+            {/* Left side */}
+            <div className="w-full lg:w-1/2 flex flex-col items-start text-left">
+              <span className="text-purple-500 font-bold uppercase tracking-wider text-sm mb-3 px-3 py-1 bg-purple-900/30 rounded-full border border-purple-700/50">
+                Installation
+              </span>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6 font-sans tracking-tight text-white leading-tight">
+                Installera IPTV enkelt på alla dina enheter
+              </h2>
+              <p 
+                className="text-gray-300 text-lg mb-8" 
+                style={{ fontFamily: "var(--font-dm-sans), 'DM Sans', sans-serif", lineHeight: "1.8" }}
+              >
+                Få tillgång till dina favoritkanaler på nolltid. Vi har gjort det superenkelt att komma igång oavsett vilken enhet du använder. Följ våra tydliga steg-för-steg-guider och börja streama direkt.
+              </p>
+              
+              <ul className="space-y-4 mb-10 w-full">
+                {[
+                  "Fungerar på Smart TV, mobil och dator",
+                  "Ingen teknisk förkunskap krävs",
+                  "Kom igång på under 5 minuter"
+                ].map((feature, idx) => (
+                  <li key={idx} className="flex items-center gap-4">
+                    <div className="flex-shrink-0 w-6 h-6 rounded-full bg-purple-900/50 flex items-center justify-center border border-purple-700">
+                      <svg className="w-4 h-4 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <span className="text-gray-200 text-lg font-medium">{feature}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Right side */}
+            <div className="w-full lg:w-1/2 relative">
+              <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl border border-gray-800">
+                <Image 
+                  src="/images/Live-TV.webp" 
+                  alt="Live-TV web" 
+                  fill
+                  className="object-cover hover:scale-105 transition-transform duration-700"
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Underneath the section CTA */}
+          <div className="mt-16 flex justify-center lg:justify-start">
+            <Link 
+              href="/installationsguider" 
+              className="inline-flex items-center justify-center gap-3 bg-purple-600 hover:bg-purple-700 text-white font-bold py-4 px-10 rounded-full text-lg transition-all duration-300 shadow-lg shadow-purple-600/20 hover:-translate-y-1 hover:shadow-purple-600/40"
+            >
+              Installationsguider
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" viewBox="0 0 20 20" fill="currentColor">
+                <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+              </svg>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <DeviceGuideGrid />
+      <InstallationStepsFAQ />
+    </div>
+  );
+}
