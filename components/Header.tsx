@@ -3,11 +3,12 @@
 import Link from "next/link";
 import Image from "next/image";
 import { ChevronDown, ShoppingCart, User, Menu, X } from "lucide-react";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useState, useRef, useEffect } from "react";
 
 export default function Header() {
   const pathname = usePathname();
+  const router = useRouter();
 
   const isActive = (path: string) => pathname === path;
 
@@ -244,14 +245,17 @@ export default function Header() {
               }
             }}
           >
-            <Link
-              href="/installationsguider"
+            <button
+              type="button"
               id="dropdown-installationsguider-trigger"
               aria-haspopup="true"
               aria-expanded={openDropdown === "installationsguider"}
               aria-controls="dropdown-installationsguider"
               className="flex items-center gap-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a] rounded"
-              onClick={() => toggleDropdown("installationsguider")}
+              onClick={() => {
+                toggleDropdown("installationsguider");
+                router.push("/installationsguider");
+              }}
               onKeyDown={(e) => handleKeyDown(e, "installationsguider")}
             >
               Installationsguider
@@ -261,7 +265,7 @@ export default function Header() {
                 }`}
                 aria-hidden="true"
               />
-            </Link>
+            </button>
 
             <div
               id="dropdown-installationsguider"
@@ -437,8 +441,8 @@ export default function Header() {
 
           {/* Installationsguider Mobile Dropdown */}
           <div className="space-y-1">
-            <Link
-              href="/installationsguider"
+            <button
+              type="button"
               className={`w-full text-left flex items-center justify-between py-3 px-3 font-medium rounded transition-colors ${
                 isInstallationsguiderActive
                   ? "text-[#e50000]"
@@ -446,7 +450,10 @@ export default function Header() {
               } focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a]`}
               aria-expanded={openDropdown === "installationsguider"}
               aria-controls="mobile-dropdown-installationsguider"
-              onClick={() => toggleDropdown("installationsguider")}
+              onClick={() => {
+                toggleDropdown("installationsguider");
+                router.push("/installationsguider");
+              }}
             >
               Installationsguider
               <ChevronDown
@@ -455,7 +462,7 @@ export default function Header() {
                 }`}
                 aria-hidden="true"
               />
-            </Link>
+            </button>
 
             <div
               id="mobile-dropdown-installationsguider"
