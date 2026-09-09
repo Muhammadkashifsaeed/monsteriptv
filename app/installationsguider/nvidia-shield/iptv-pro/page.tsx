@@ -2,6 +2,30 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
+
+export const metadata: Metadata = {
+  title: "Iptv Pro IPTV Instruktioner | Monster TV",
+  description: "Installera Iptv Pro pa Nvidia Shield. Steg-for-steg guide for IPTV. 13,000+ kanaler, filmer och live-sport tillgangliga.",
+  keywords: ["Iptv Pro", "IPTV", "Monster TV", "installera", "guide", "Nvidia Shield"],
+  alternates: { canonical: "https://monstertv.tv/installationsguider/nvidia-shield/iptv-pro/" },
+  openGraph: {
+    title: "Iptv Pro IPTV Instruktioner | Monster TV",
+    description: "Installera Iptv Pro pa Nvidia Shield.",
+    type: "website",
+    locale: "sv_SE",
+    url: "https://monstertv.tv/installationsguider/nvidia-shield/iptv-pro/",
+    siteName: "Monster TV",
+    images: [{ url: "https://monstertv.tv/images/allsvenskan-2026.jpg", width: 1200, height: 630, alt: "Monster TV - Iptv Pro" }]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Iptv Pro IPTV Instruktioner | Monster TV",
+    description: "Installera Iptv Pro pa Nvidia Shield.",
+    images: ["https://monstertv.tv/images/allsvenskan-2026.jpg"]
+  }
+};
+
+
 export default function IptvProPage() {
   return (
     <div className="w-full font-sans bg-[#0a0a0a] min-h-screen">

@@ -7,6 +7,30 @@ import IptvPricingSection from '@/components/IptvPricingSection';
 import ComparisonTable from '@/components/ComparisonTable';
 import CtaSection from '@/components/CtaSection';
 
+
+export const metadata: Metadata = {
+  title: "IPTV Abonnemang 2026 | Monster TV",
+  description: "Bestall IPTV-abonnemang fran Monster TV.",
+  keywords: ["IPTV Abonnemang", "IPTV", "Monster TV", "installera", "guide", ""],
+  alternates: { canonical: "https://monstertv.tv/iptv-abonnemang/" },
+  openGraph: {
+    title: "IPTV Abonnemang 2026 | Monster TV",
+    description: "Installera Iptv Abonnemang pa .",
+    type: "website",
+    locale: "sv_SE",
+    url: "https://monstertv.tv/iptv-abonnemang/",
+    siteName: "Monster TV",
+    images: [{ url: "https://monstertv.tv/images/allsvenskan-2026.jpg", width: 1200, height: 630, alt: "Monster TV - IPTV Abonnemang" }]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "IPTV Abonnemang 2026 | Monster TV",
+    description: "Installera Iptv Abonnemang pa .",
+    images: ["https://monstertv.tv/images/allsvenskan-2026.jpg"]
+  }
+};
+
+
 export default function IptvAbonnemangPage() {
   return (
     <div className="w-full font-sans">

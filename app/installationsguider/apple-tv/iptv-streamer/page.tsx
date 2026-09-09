@@ -2,6 +2,30 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
+
+export const metadata: Metadata = {
+  title: "Iptv Streamer IPTV Instruktioner | Monster TV",
+  description: "Installera Iptv Streamer pa Apple TV. Steg-for-steg guide for IPTV. 13,000+ kanaler, filmer och live-sport tillgangliga.",
+  keywords: ["Iptv Streamer", "IPTV", "Monster TV", "installera", "guide", "Apple TV"],
+  alternates: { canonical: "https://monstertv.tv/installationsguider/apple-tv/iptv-streamer/" },
+  openGraph: {
+    title: "Iptv Streamer IPTV Instruktioner | Monster TV",
+    description: "Installera Iptv Streamer pa Apple TV.",
+    type: "website",
+    locale: "sv_SE",
+    url: "https://monstertv.tv/installationsguider/apple-tv/iptv-streamer/",
+    siteName: "Monster TV",
+    images: [{ url: "https://monstertv.tv/images/allsvenskan-2026.jpg", width: 1200, height: 630, alt: "Monster TV - Iptv Streamer" }]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Iptv Streamer IPTV Instruktioner | Monster TV",
+    description: "Installera Iptv Streamer pa Apple TV.",
+    images: ["https://monstertv.tv/images/allsvenskan-2026.jpg"]
+  }
+};
+
+
 export default function IptvStreamerPage() {
   return (
     <div className="w-full font-sans bg-[#0a0a0a] min-h-screen">

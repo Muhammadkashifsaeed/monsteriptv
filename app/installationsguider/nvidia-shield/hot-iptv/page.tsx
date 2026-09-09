@@ -2,6 +2,30 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
+
+export const metadata: Metadata = {
+  title: "Hot Iptv IPTV Instruktioner | Monster TV",
+  description: "Installera Hot Iptv pa Nvidia Shield. Steg-for-steg guide for IPTV. 13,000+ kanaler, filmer och live-sport tillgangliga.",
+  keywords: ["Hot Iptv", "IPTV", "Monster TV", "installera", "guide", "Nvidia Shield"],
+  alternates: { canonical: "https://monstertv.tv/installationsguider/nvidia-shield/hot-iptv/" },
+  openGraph: {
+    title: "Hot Iptv IPTV Instruktioner | Monster TV",
+    description: "Installera Hot Iptv pa Nvidia Shield.",
+    type: "website",
+    locale: "sv_SE",
+    url: "https://monstertv.tv/installationsguider/nvidia-shield/hot-iptv/",
+    siteName: "Monster TV",
+    images: [{ url: "https://monstertv.tv/images/allsvenskan-2026.jpg", width: 1200, height: 630, alt: "Monster TV - Hot Iptv" }]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Hot Iptv IPTV Instruktioner | Monster TV",
+    description: "Installera Hot Iptv pa Nvidia Shield.",
+    images: ["https://monstertv.tv/images/allsvenskan-2026.jpg"]
+  }
+};
+
+
 export default function HotIptvPage() {
   return (
     <div className="w-full font-sans bg-[#0a0a0a] min-h-screen">

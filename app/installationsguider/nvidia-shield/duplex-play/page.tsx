@@ -2,6 +2,30 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
+
+export const metadata: Metadata = {
+  title: "Duplex Play IPTV Instruktioner | Monster TV",
+  description: "Installera Duplex Play pa Nvidia Shield. Steg-for-steg guide for IPTV. 13,000+ kanaler, filmer och live-sport tillgangliga.",
+  keywords: ["Duplex Play", "IPTV", "Monster TV", "installera", "guide", "Nvidia Shield"],
+  alternates: { canonical: "https://monstertv.tv/installationsguider/nvidia-shield/duplex-play/" },
+  openGraph: {
+    title: "Duplex Play IPTV Instruktioner | Monster TV",
+    description: "Installera Duplex Play pa Nvidia Shield.",
+    type: "website",
+    locale: "sv_SE",
+    url: "https://monstertv.tv/installationsguider/nvidia-shield/duplex-play/",
+    siteName: "Monster TV",
+    images: [{ url: "https://monstertv.tv/images/allsvenskan-2026.jpg", width: 1200, height: 630, alt: "Monster TV - Duplex Play" }]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Duplex Play IPTV Instruktioner | Monster TV",
+    description: "Installera Duplex Play pa Nvidia Shield.",
+    images: ["https://monstertv.tv/images/allsvenskan-2026.jpg"]
+  }
+};
+
+
 export default function DuplexPlayPage() {
   return (
     <div className="w-full font-sans bg-[#0a0a0a] min-h-screen">

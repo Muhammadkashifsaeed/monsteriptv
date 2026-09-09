@@ -2,6 +2,30 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
+
+export const metadata: Metadata = {
+  title: "9xtream Iptv IPTV Instruktioner | Monster TV",
+  description: "Installera 9xtream Iptv pa Nvidia Shield. Steg-for-steg guide for IPTV. 13,000+ kanaler, filmer och live-sport tillgangliga.",
+  keywords: ["9xtream Iptv", "IPTV", "Monster TV", "installera", "guide", "Nvidia Shield"],
+  alternates: { canonical: "https://monstertv.tv/installationsguider/nvidia-shield/9xtream-iptv/" },
+  openGraph: {
+    title: "9xtream Iptv IPTV Instruktioner | Monster TV",
+    description: "Installera 9xtream Iptv pa Nvidia Shield.",
+    type: "website",
+    locale: "sv_SE",
+    url: "https://monstertv.tv/installationsguider/nvidia-shield/9xtream-iptv/",
+    siteName: "Monster TV",
+    images: [{ url: "https://monstertv.tv/images/allsvenskan-2026.jpg", width: 1200, height: 630, alt: "Monster TV - 9xtream Iptv" }]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "9xtream Iptv IPTV Instruktioner | Monster TV",
+    description: "Installera 9xtream Iptv pa Nvidia Shield.",
+    images: ["https://monstertv.tv/images/allsvenskan-2026.jpg"]
+  }
+};
+
+
 export default function App9xtreamIptvPage() {
   return (
     <div className="w-full font-sans bg-[#0a0a0a] min-h-screen">

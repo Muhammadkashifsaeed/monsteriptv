@@ -2,6 +2,30 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
+
+export const metadata: Metadata = {
+  title: "Mega Iptv IPTV Instruktioner | Monster TV",
+  description: "Installera Mega Iptv pa Nvidia Shield. Steg-for-steg guide for IPTV. 13,000+ kanaler, filmer och live-sport tillgangliga.",
+  keywords: ["Mega Iptv", "IPTV", "Monster TV", "installera", "guide", "Nvidia Shield"],
+  alternates: { canonical: "https://monstertv.tv/installationsguider/nvidia-shield/mega-iptv/" },
+  openGraph: {
+    title: "Mega Iptv IPTV Instruktioner | Monster TV",
+    description: "Installera Mega Iptv pa Nvidia Shield.",
+    type: "website",
+    locale: "sv_SE",
+    url: "https://monstertv.tv/installationsguider/nvidia-shield/mega-iptv/",
+    siteName: "Monster TV",
+    images: [{ url: "https://monstertv.tv/images/allsvenskan-2026.jpg", width: 1200, height: 630, alt: "Monster TV - Mega Iptv" }]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mega Iptv IPTV Instruktioner | Monster TV",
+    description: "Installera Mega Iptv pa Nvidia Shield.",
+    images: ["https://monstertv.tv/images/allsvenskan-2026.jpg"]
+  }
+};
+
+
 export default function MegaIptvPage() {
   return (
     <div className="w-full font-sans bg-[#0a0a0a] min-h-screen">
