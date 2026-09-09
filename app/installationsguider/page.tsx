@@ -6,7 +6,7 @@ import InstallationStepsFAQ from '@/components/InstallationStepsFAQ';
 
 export const metadata = {
   title: 'Installationsguider | Monster TV - Steg-för-steg IPTV guider',
-  description: 'Komplett installationsguider för IPTV på alla enheter. Smart TV, Android TV, iOS, Android, Windows, Mac, Apple TV, Nvidia Shield och mer. Steg-för-steg instruktioner.',
+  description: 'Komplett IPTV installationsguide för Smart TV, Android TV, iOS, Android, Windows, Mac, Apple TV och Nvidia Shield. Följ enkla steg-för-steg instruktioner.',
   keywords: ['installationsguider', 'IPTV', 'guide', 'Smart TV', 'Android TV', 'Apple TV', 'Windows', 'Mac', 'Monster TV'],
   alternates: { canonical: 'https://monstertv.tv/installationsguider/' },
   openGraph: {
