@@ -309,8 +309,6 @@ export default function Header() {
 
           <Link
             href="https://jivo.chat/me628jLt79"
-            target="_blank"
-            rel="noopener noreferrer"
             className="hover:text-[#e50000] font-medium transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a] rounded"
           >
             Kontakta
@@ -501,8 +499,6 @@ export default function Header() {
 
           <Link
             href="https://jivo.chat/me628jLt79"
-            target="_blank"
-            rel="noopener noreferrer"
             className="text-gray-300 hover:text-[#e50000] font-medium block py-3 px-3 rounded transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a]"
             onClick={closeMobileMenu}
           >
